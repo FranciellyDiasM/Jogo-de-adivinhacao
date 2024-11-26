@@ -5,27 +5,26 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding: 20px;
+    margin: 0;
     background-color: #f5f5f5;
 }
 
 .container-total {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
-    background-color: #0056b3;
+    width: 40%;
+    height: 70%;
+    
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    border: 2px solid rgb(42, 40, 191);
     border-radius: 10px;
-    /* Bordas arredondadas */
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px white, -5px -5px 10px 5px white;
 }
 
 h1 {
-    color: #a91414;
+    color: #0c0c0c;
     margin-bottom: 20px;
 }
 
@@ -35,23 +34,24 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 70%;
-    height: 80%;
-    background-color: #555;
+    height: 90%;
+    border: 2px solid rgb(42, 40, 191);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px 10px;
     overflow: hidden;
 
 }
 
 p {
     font-size: 1.2rem;
-    color: #1eca29;
+    color: #0c0c0c;
+    font-weight: bold;
 }
 
 #colorOptions {
-    margin: 20px 0;
+    margin: 15px 0;
     font-size: 1.1rem;
-    color: #12ec24;
+    color: #0c0c0c;
 }
 
 input {
@@ -70,6 +70,7 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -77,7 +78,7 @@ button:hover {
 }
 
 #feedback {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.2rem;
-    color: #444;
+    color: #0c0c0c;
 }
