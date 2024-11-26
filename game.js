@@ -27,15 +27,16 @@ function generateAllColors() {
   return colors;
 }
 
-// Gerar vetor aleatório de 10 cores
 const allColors = generateAllColors();
-const randomColors = allColors.sort(() => 0.5 - Math.random()).slice(0, 10);
+const randomColors = allColors.sort(() => 0.5 - Math.random()).slice(0, 10); //gerar 10 cores
 
-// Escolher uma cor secreta
+const colorOptionsDiv = document.getElementById("colorOptions");
+colorOptionsDiv.textContent = `Opções de cores: ${randomColors.join(", ")}`; //mostrar as aleatorias
+
 const secretColor = randomColors[Math.floor(Math.random() * randomColors.length)];
-console.log(`Cor secreta: ${secretColor}`); // Apenas para depuração
+console.log(`Cor secreta: ${secretColor}`); // escolher a cor
 
-// Função de adivinhação
+// Função de adivinha
 function guessColor() {
   const userColor = document.getElementById("colorInput").value.trim();
   const feedback = document.getElementById("feedback");
