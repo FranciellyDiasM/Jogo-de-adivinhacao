@@ -1,4 +1,4 @@
-// Função para gerar todas as cores possíveis do HTML5
+
 function generateAllColors() {
   const colors = [
     "AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige", "Bisque", 
@@ -41,7 +41,7 @@ function guessColor() {
   const feedback = document.getElementById("feedback");
 
   if (!userColor) {
-    feedback.textContent = "Por favor, digite uma cor.";
+    feedback.textContent = "Digite uma cor:";
     return;
   }
 
