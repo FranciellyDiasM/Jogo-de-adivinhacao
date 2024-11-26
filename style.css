@@ -12,9 +12,9 @@ body {
 .container-total {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 70%;
-    
+    width: 90%;
+    max-width: 600px;
+    height: auto;
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(42, 40, 191);
@@ -33,8 +33,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 90%;
+    width: 80%;
+    height: auto;
     border: 2px solid rgb(42, 40, 191);
     border-radius: 10px;
     padding: 10px 10px;
@@ -59,7 +59,8 @@ input {
     font-size: 1rem;
     border: 2px solid #ccc;
     border-radius: 5px;
-    width: 200px;
+    width: 80%;
+    max-width: 300px;
 }
 
 button {
@@ -81,4 +82,45 @@ button:hover {
     margin-top: 10px;
     font-size: 1.2rem;
     color: #0c0c0c;
+}
+
+@media (max-width: 768px) {
+    .container-total {
+        width: 90%;
+        /* Ajuste de largura para telas pequenas */
+    }
+
+    input {
+        width: 90%;
+        /* Aumenta a largura do input em telas pequenas */
+    }
+
+    button {
+        width: 90%;
+        /* Faz o botão se expandir em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        /* Ajusta o tamanho do título */
+    }
+
+    p,
+    #colorOptions,
+    #feedback {
+        font-size: 1rem;
+        /* Reduz o tamanho da fonte para pequenas telas */
+    }
+
+    input {
+        width: 100%;
+        /* O input ocupa 100% da largura da tela */
+    }
+
+    button {
+        width: 100%;
+        /* O botão ocupa 100% da largura da tela */
+    }
 }
